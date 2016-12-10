@@ -1,3 +1,22 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+section
+{
+  text-align: center;
+  background: #ffffff;
+  padding: 5rem;
+  border: dashed 2px maroon;
+  margin: auto 0;
+  width: 90%;
+  height: 10rem;
+}
+
+
 .group {
   padding-top: 2rem;
   padding-bottom: 2rem;
