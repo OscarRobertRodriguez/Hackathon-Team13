@@ -1,6 +1,22 @@
 
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+section
+{
+  background: #ffffff;
+  padding: 10px;
+  border: dashed 2px maroon;
+  margin: auto 0;
+  width: 90%;
+  height: 40rem;
+}
+
 .container {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
 }
 
