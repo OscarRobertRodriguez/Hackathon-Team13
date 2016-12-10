@@ -25,7 +25,7 @@ input[type="checkbox"] + label:before {
   font-size: 1.6rem;
   font-family: 'Arial Unicode MS';
   background-color: #FFFFFF;
-  border: 1px solid #8894a4;
+  border: 1px solid #CFCFCF;
   color: #8894a4;
   text-align: center;
   cursor: pointer;
@@ -46,6 +46,7 @@ label {
 
 input[type="radio"] + label:before {
   border: 1px solid #CFCFCF;
+  background-color: #FFFFFF;
   content: "";
   display: inline-block;
   height: 20px;

@@ -6,11 +6,11 @@ html {
 }
 section
 {
-  background: #EFF5FB;
+  background: #ffffff;
   padding: 10px;
   border: dashed 2px maroon;
   margin: auto;
-  width: 60%;
+  width: 90%;
   text-align: center;
 }
 
@@ -25,7 +25,7 @@ section
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   cursor: pointer;
   color: #FFFFFF;
   transition: .2s ease-out;
@@ -136,7 +136,6 @@ section
   text-align: left;
 }
 
-/* style the buttons */
 .md-menu-content a {
   text-transform: none;
   text-decoration: none;
