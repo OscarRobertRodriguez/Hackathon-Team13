@@ -1,0 +1,71 @@
+.group {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.group span {
+  padding-right: 2rem;
+
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: '\00a0';
+  display: inline-block;
+  width: 2rem;
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 1.6rem;
+  font-family: 'Arial Unicode MS';
+  background-color: #FFFFFF;
+  border: 1px solid #8894a4;
+  color: #8894a4;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: '\2714';
+  border: 1px solid #61c5d9;
+  background-color: #FAFEFF;
+  color: #61c5d9;
+}
+
+label {
+  color: #8894a4;
+  font-size: 1.4rem;
+}
+
+input[type="radio"] + label:before {
+  border: 1px solid #CFCFCF;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 10px;
+  vertical-align:top;
+}
+
+input[type="radio"] + label:before {
+  border-radius: 12px;
+}
+
+input[type="radio"]:checked + label:before {
+  border-color: #61c5d9;
+  background-color: #61c5d9;
+  box-shadow: 0 0 0 6px #FAFEFF inset;
+}
+
+
+
