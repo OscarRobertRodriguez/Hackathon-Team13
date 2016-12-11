@@ -49,6 +49,9 @@ table {
 
 /*End Reset*/
 
+#container {
+    margin-bottom: 200px;
+}
 
 /*input container div*/
 .mainDiv {
@@ -56,6 +59,7 @@ table {
     width: 1000px;
     margin:  0 auto;
     margin-top: 100px;
+    margin-bottom: 20px;
     border: 1px solid grey;
     height: auto;
     padding: 20px;
@@ -85,7 +89,7 @@ input {
 
 
 /*input styling */
-#input1,#input2,#input3,#input4,#input5 {
+#input1,#input2,#input3,#input4,#input5,#input6, #input7 {
     width: 300px;
     height: 40px;
     margin-top: 20px;
@@ -103,7 +107,7 @@ input {
 }
 
 
-#input1:focus {
+#input1:focus, #input2:focus, #input3:focus, #input4:focus, #input5:focus {
     border-bottom:  3px solid blue;
     transition-property: border-bottom;
     transition-duration: 0.2s;
@@ -118,7 +122,7 @@ input {
 
 
 /*dropdown styling*/
-.dropdown-content,.dropdown-content2 {
+.dropdown-content,.dropdown-content2,.dropdown-content3,.dropdown-content4,.dropdown-content5,.dropdown-content6,.dropdown-content7 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;

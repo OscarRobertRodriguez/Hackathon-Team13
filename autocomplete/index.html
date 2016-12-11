@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<div id="container">
 <div class="mainDiv">
    <div id="firstHeading">
       <h1>Simple Example</h1>
@@ -43,11 +44,11 @@
    <input type="text" id="input3" onkeyup="updateBlock(this)" placeholder="Type Here" required>
 
 
-   <div class="dropdown-content">
+   <div class="dropdown-content3">
       <ul class="ulElement">
-         <li><a class="linkText" href="#">1</a></li>
-         <li><a class="linkText" href="#">2</a></li>
-         <li><a class="linkText" href="#">3</a></li>
+         <li><a class="linkText" href="#">6</a></li>
+         <li><a class="linkText" href="#">7</a></li>
+         <li style="display:none;><a class="linkText" href="#"></a></li>
       </ul>
    </div>
 
@@ -55,20 +56,40 @@
    <input type="text" id="input4" onkeyup="updateBlock(this)" placeholder="Full Width" required>
 
 
-   <div class="dropdown-content">
+   <div class="dropdown-content4">
       <ul class="ulElement">
-         <li><a class="linkText" href="#">3</a></li>
-         <li><a class="linkText" href="#">4</a></li>
-         <li><a class="linkText" href="#">5</a></li>
+         <li><a class="linkText" href="#">8</a></li>
+         <li><a class="linkText" href="#">9</a></li>
+         <li><a class="linkText" href="#">10</a></li>
       </ul>
    </div>
    <input type="text" id="input5" onkeyup="updateBlock(this)" placeholder="Full Width" required>
-   <div class="dropdown-content3">
+   <div class="dropdown-content5">
       <ul class="ulElement">
-         <li><a class="linkText" href="#">3</a></li>
-         <li><a class="linkText" href="#">4</a></li>
-         <li><a class="linkText" href="#">5</a></li>
+         <li><a class="linkText" href="#">12</a></li>
+         <li><a class="linkText" href="#">13</a></li>
+         <li style="display: none;"><a class="linkText" href="#">14</a></li>
       </ul>
+   </div>
+</div>
+<!--Last UI-->
+   <div class="mainDiv">
+      <div id="firstHeading">
+         <h1>Filters</h1>
+      </div>
+      <input type="text" id="input6" onkeyup="updateBlockCase(this)" placeholder="Type Here" required>
+      <div class="dropdown-content6">
+         <ul class="ulElement">
+            <li><a class="linkText" href="#">Red</a></li>
+            <li><a class="linkText" href="#">Orange</a></li>
+            <li><a class="linkText" href="#">Yellow</a></li>
+            <li><a class="linkText" href="#">Green</a></li>
+            <li><a class="linkText" href="#">Blue</a></li>
+            <li><a class="linkText" href="#">Purple</a></li>
+            <li><a class="linkText" href="#">Black</a></li>
+            <li><a class="linkText" href="#">White</a></li>
+         </ul>
+      </div>
    </div>
 </div>
 <script type="text/javascript" src="script.js"></script>
