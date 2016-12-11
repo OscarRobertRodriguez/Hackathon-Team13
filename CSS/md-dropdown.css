@@ -4,10 +4,26 @@ html {
   padding: 0;
   font-size: 62.5%;
 }
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
+h3 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
+
 section
 {
   background: #ffffff;
-  padding: 10px;
+  padding: 5rem;
   border: dashed 2px maroon;
   margin: auto;
   width: 90%;
@@ -36,11 +52,11 @@ section
 }
 
 .md-bg-light-blue {
-  background-color: #26a69a;
+  background-color: rgba(38, 166, 154, 0.7);
 }
 
 .md-btn.md-bg-light-blue:hover {
-  background-color: #2bbbad;
+  background-color: rgba(43, 187, 173, 0.7);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
