@@ -5,6 +5,20 @@ html {
   font-size: 62.5%;
 }
 
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
+h3 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
 section
 {
   background: #ffffff;
@@ -12,7 +26,8 @@ section
   border: dashed 2px maroon;
   margin: auto 0;
   width: 90%;
-  height: 40rem;
+  height: 50rem;
+  text-align: center;
 }
 
 .container {

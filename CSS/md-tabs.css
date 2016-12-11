@@ -4,11 +4,40 @@ html {
   font-size: 62.5%;
 }
 
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
+h3 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(181, 109, 0, 0.7);
+}
+
+section {
+  background: #ffffff;
+  padding: 10px;
+  border: dashed 2px maroon;
+  margin: auto 0;
+  width: 90%;
+  height: 30rem;
+  text-align: center;
+}
+
+.container {
+  padding-left: 20rem;
+}
+
 .tabs {
   box-shadow: 0 2px 15px 2px;
   position: absolute;
   height: 20%;
   font-size: 1.4rem;
+  text-align: left;
 }
 
 .disabled {
