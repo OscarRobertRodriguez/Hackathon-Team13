@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+#pagination1, #pagination2, #pagination3, #pagination4{
+    margin-top:4em;
+}
+
+i{
+    position:relative;
+    top:0.2em;
+}
+
+#pagination1 .page, #pagination3 .page, #pagination4 .page{
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border:1px solid black;
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    line-height:3em;
+}
+
+#pagination2 .page{
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    line-height:3em;
+}
+
+#pagination2 .page:hover{
+    border:5px solid blue;
+    vertical-align:middle;
+    line-height:2.3em;
+}
+
+input{
+    display:none;
+}
+
+#pagination2 input:checked + label{
+   background-color: teal;
+   color:white;
+}
+
+.chevron, .arrow{
+    display:inline-block;
+    width:2em;
+    height:2em;
+    margin-left:1em;
+}
+
+.chevron:hover{
+   padding:0.5em 0.5em 1em 0.5em;
+   background-color: black;
+   color:white;
+}
+
+#pagination3 {
+    position:relative;
+    border:5px solid black;
+    height:6em;
+    background-color:#0080ff;
+
+}
+
+#pagination3 .page{
+    position:relative;
+    border-radius:50%;
+    margin-top:1em;
+}
+
+#pagination3 > i{
+    position:relative;
+    top:0.5em;
+}
+
+#pagination4 .page{
+    transform: rotate(45deg);
+}
+
+#pagination4 .page p{
+    transform:rotate(-45deg);
+    position:relative;
+    top:-1em;
+}
+
+#pagination4 input:checked + label{
+   background-color: teal;
+   color:white;
+   transform:rotate(1845deg);
+   transition: all 1s;
+
+}
+
+#pagination4 .page:hover{
+    box-shadow:0em 0em 1em 0.5em teal;
+    background-color:black;
+    color:white;
+}
+
+.arrow:hover{
+   box-shadow:0em 0em 1em 0.5em teal;
+   transform:rotateX(1800deg);
+   color:white;
+   background-color:black;
+   padding-bottom:3em;
+   transition: all 1s;
+}
+
+.page:hover{
+  cursor:pointer;
+}
+
