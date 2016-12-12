@@ -12,8 +12,11 @@ for(var i = 0; i < inputListener.length; i++) {
 
 function isNotEmpty(ele) {
    var input = ele.target;
+   var label = input.nextSibling.nextSibling;
    var inputText = input.value;
 
-   if (inputText.length)
+   if (inputText.length > 0) {
+      label.className = "freezeLabel";
+   }
 
 }

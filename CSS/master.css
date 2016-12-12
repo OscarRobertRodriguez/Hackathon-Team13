@@ -165,13 +165,26 @@ table tr td {
 
 .inputDiv {
     position: relative;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 50px;
+    width: auto;
 }
+
+.newLine {
+
+    width: 885px;
+}
+
 
 input {
     position: relative;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
+    width: 410px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 
@@ -182,6 +195,7 @@ input:focus {
 }
 
 input:focus + label {
+    color: blue;
     font-size: 70%;
     top:-15px;
     padding: 1px 6px;
@@ -190,13 +204,7 @@ input:focus + label {
 }
 
 
-input:disabled + label {
-    font-size: 70%;
-    top:-15px;
-    padding: 1px 6px;
-    z-index: 2;
-    text-transform: uppercase;
-}
+
 
 label {
     transition:
@@ -210,3 +218,12 @@ label {
     left: 15px;
     top: 3px;
 }
+
+.freezeLabel {
+    font-size: 70%;
+    top:-15px;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
