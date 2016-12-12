@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+form, label.zoom-image-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 0vh;
+    overflow: visible;
+}
+img.button {
+    max-width: 45.5%;
+    position: relative;
+    left: 600px;
+    top: 50vh;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    transition: all .2s ease-in-out;
+    z-index: 20;
+}
+
+input#button {
+    display: none;
+}
+input#page {
+    display: none;
+}
+input#button:checked~label img.button {
+    transform: scale(1.2);
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+input#button:not(:checked)~label img.button:hover {
+    opacity: .8;
+}
+input#button:checked~label.zoom-image-border {
+    transition: .2s;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height:0vh;
+}
+div.box {
+    width: 300px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+div.black-background{
+    position:absolute;
+    width:2000px;
+    height:400vh;
+    background-color: #292929;
+    visibility:hidden;
+}
+
+input#button:checked + div.black-background{
+    visibility:visible;
+}
