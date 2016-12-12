@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="UTF-8"/>
   <title>December Hackathon - Carousels</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
   <link rel="stylesheet" type="text/css" href="../CSS/carousels.css">
 </head>
 <body>
@@ -11,29 +12,150 @@
     <div class="content">
       <h1>Carousels</h1>
 
-      <div class="thumbnailsSlider carousel">
+      <h2> Left-Side Sliding Clicks Carousel</h2>
 
-        <ul class="pics">
-          <li class="clickArea"><img draggable="true" class="pic" src="#"></li>
-          <li class="clickArea"><img draggable="true" class="pic" src="#"></li>
-          <li class="clickArea"><img draggable="true" class="pic" src="#"></li>
-          <li class="clickArea"><img draggable="true" class="pic" src="#"></li>
-          <li class="clickArea"><img draggable="true" class="pic" src="#"></li>
-        </ul>
+      <div class="carousel1 carousel">
 
+          <input type="radio" name="images1" id="Img1-1" checked>
+          <img src="https://static.pexels.com/photos/31357/pexels-photo-31357.jpg">
+
+          <input type="radio" name="images1" id="Img1-2" >
+          <img src="https://static.pexels.com/photos/28452/pexels-photo-28452.jpg">
+ 
+          <input type="radio" name="images1" id="Img1-3" >
+          <img src="https://static.pexels.com/photos/7837/pexels-photo.jpg">
+
+          <input type="radio" name="images1" id="Img1-4" >
+          <img src="https://static.pexels.com/photos/1188/city-landmark-lights-night.jpg">          
+
+          <div class="chevronLabels">
+            <label for="Img1-2" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i><p>NEXT</p></label>
+            <label for="Img1-4" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i><p>PREV</p></label>
+            <label for="Img1-3" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i><p>NEXT</p></label>
+            <label for="Img1-1" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i><p>PREV</p></label>
+            <label for="Img1-4" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i><p>NEXT</p></label>
+            <label for="Img1-2" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i><p>PREV</p></label>
+            <label for="Img1-1" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i><p>NEXT</p></label>
+            <label for="Img1-3" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i><p>PREV</p></label>            
+          </div>    
+
+          <div class="radioLabels">
+            <label for="Img1-1"><i class="fa fa-circle-o" class="first" aria-hidden="true"></i></label>
+            <label for="Img1-2"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img1-3"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img1-4"><i class="fa fa-circle-o" aria-hidden="true"></i></label>                     
+          </div> 
+
+      </div>
+
+      <h2>Click Through Icons Regular Carousel</h2>
+
+      <div class="carousel2 carousel">
+
+
+
+          <input type="radio" name="images" id="Img1" checked>
+          <img src="https://static.pexels.com/photos/92905/pexels-photo-92905.jpeg">
+
+          <input type="radio" name="images" id="Img2" >
+          <img src="https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg">
+ 
+          <input type="radio" name="images" id="Img3" >
+          <img src="https://static.pexels.com/photos/92904/pexels-photo-92904.jpeg">
+
+          <input type="radio" name="images" id="Img4" >
+          <img src="https://static.pexels.com/photos/34600/pexels-photo.jpg">          
+
+          <div class="chevronLabels">
+            <label for="Img2" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img4" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img3" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img1" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img4" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img2" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img1" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img3" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>            
+          </div>    
+
+          <div class="radioLabels">
+            <label for="Img1"><i class="fa fa-circle-o" class="first" aria-hidden="true"></i></label>
+            <label for="Img2"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img3"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img4"><i class="fa fa-circle-o" aria-hidden="true"></i></label>                     
+          </div>  
 
 
       </div>
 
-      <div class="fullWidthSlider carousel">
+      <h2>Click Through Icons And Clickable Images Regular Carousel</h2>      
+
+      <div class="carousel3 carousel" id="set3">
+
+          <input type="radio" name="images3" id="Img3-1" checked>
+          <img src="https://static.pexels.com/photos/194450/pexels-photo-194450.jpeg" id="one">
+
+          <input type="radio" name="images3" id="Img3-2" >
+          <img src="https://static.pexels.com/photos/234283/pexels-photo-234283.jpeg" id="two">
+ 
+          <input type="radio" name="images3" id="Img3-3" >
+          <img src="https://static.pexels.com/photos/88148/pexels-photo-88148.jpeg" id="three">
+
+          <input type="radio" name="images3" id="Img3-4" >
+          <img src="https://static.pexels.com/photos/80522/sunset-sun-sky-clouds-80522.jpeg" id="four">          
+
+          <div class="chevronLabels">
+            <label for="Img3-2" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img3-4" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img3-3" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img3-1" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img3-4" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img3-2" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img3-1" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img3-3" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>            
+          </div>    
+
+          <div class="radioLabels">
+            <label for="Img3-1"><i class="fa fa-circle-o" class="first" aria-hidden="true"></i></label>
+            <label for="Img3-2"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img3-3"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img3-4"><i class="fa fa-circle-o" aria-hidden="true"></i></label>                     
+          </div> 
 
       </div>
 
-      <div class="specialOptionsSlider carousel">
+      <h2>Fading Effect Carousel</h2>      
 
-      </div>
+      <div class="carousel4 carousel" id="set4">
 
-      <div class="fadeSlider carousel">
+          <input type="radio" name="images4" id="Img4-1" checked>
+          <img src="https://static.pexels.com/photos/190931/pexels-photo-190931.jpeg" id="1">
+
+          <input type="radio" name="images4" id="Img4-2" >
+          <img src="https://static.pexels.com/photos/76931/pexels-photo-76931.jpeg" id="2">
+ 
+          <input type="radio" name="images4" id="Img4-3" >
+          <img src="https://static.pexels.com/photos/189263/pexels-photo-189263.jpeg" id="3">
+
+          <input type="radio" name="images4" id="Img4-4" >
+          <img src="https://static.pexels.com/photos/234881/pexels-photo-234881.jpeg" id="4">          
+
+          <div class="chevronLabels">
+            <label for="Img4-2" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img4-4" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img4-3" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img4-1" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img4-4" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img4-2" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>
+            <label for="Img4-1" class="right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></label>
+            <label for="Img4-3" class="left"><i class="fa fa-chevron-left fa-2x left" aria-hidden="true"></i></label>            
+          </div>    
+
+          <div class="radioLabels">
+            <label for="Img4-1"><i class="fa fa-circle-o" class="first" aria-hidden="true"></i></label>
+            <label for="Img4-2"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img4-3"><i class="fa fa-circle-o" aria-hidden="true"></i></label>
+            <label for="Img4-4"><i class="fa fa-circle-o" aria-hidden="true"></i></label>                     
+          </div>       
 
       </div>
     </div>
