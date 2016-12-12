@@ -1,5 +1,10 @@
 /***** Global Settings *****/
 
+* {
+    box-sizing: border-box;
+}
+
+
 html, body {
     border:0;
     margin:0;
@@ -150,3 +155,58 @@ table tr td {
 .nopadding     { padding:0; }
 .noindent      { margin-left:0;padding-left:0; }
 .nobullet      { list-style:none;list-style-image:none; }
+
+
+/***** Inputs *****/
+
+#wrap {
+    margin-top: 80px;
+}
+
+.inputDiv {
+    position: relative;
+}
+
+input {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+
+
+input:focus {
+    border-bottom: 1px solid blue;
+}
+
+input:focus + label {
+    font-size: 70%;
+    top:-15px;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+
+input:disabled + label {
+    font-size: 70%;
+    top:-15px;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+label {
+    transition:
+            background 0.2s,
+            color 0.2s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.2s,
+            left 0.2s;
+    position: absolute;
+    left: 15px;
+    top: 3px;
+}
